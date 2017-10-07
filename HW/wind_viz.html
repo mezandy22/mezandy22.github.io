@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Longitude</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+  <!-- bringing in ajax and boostrap js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- bringing in a style sheet to change some of the colors -->
+  <link rel="stylesheet" type="text/css" href="style_visualization.css">
+</head>
+
+<body>
+<!-- Navbar for the site -->
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/landing.html">World Weather Analysis</a>
+    </div>
+    <!-- navbar right  with the drop down -->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/temp_viz.html">Max Tempature</a></li>
+            <li><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/humidity_viz.html">Humidity</a></li>
+            <li><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/cloud_viz.html">Cloudiness</a></li>
+            <li><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/wind_viz.html">Wind Speed</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/comparison.html">Comparison</a></li>
+        <li class="active"><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/data.html">Data</a></li>
+        </li>
+      </ul>
+  </div>
+</nav>
+  
+<div class="container-fluid" style="background-color: #eeeeee">  
+  <div class="row">
+    <div class="container">
+      <div class="col-sm-8" style="background-color: white">
+        <div class="page-header">
+          <div class="container-fluid">
+            <h1 class="display-3">Wind Speed</h1>
+          </div>
+        </div>
+        <img src="WindSpdInWorldCities.png" alt="temp_world" width="400" height="350" class="img-responsive center-block">
+        <p>
+        This example demonstrates a 50%/50% split on small, medium and large devices. On extra small devices, it will stack (100% width). Resize the browser window to see the effect.  
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="col-sm-3 offset-sm-1" style="background-color: white">
+        <h1>Visualizations</h1>
+        <!-- first row of thumnabils -->
+        <div class="row">
+          <div class="col-sm-6 col-sm-5"> 
+            <a target="_blank" href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/temp_viz.html">
+            <img src="TempInWorldCities.png" alt="temp_world" style="width:150px" >
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a target="_blank" href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/humidity_viz.html">
+            <img src="TempInWorldCities.png" alt="temp_world" style="width:150px" >
+            </a> 
+          </div>
+        </div>
+        <!-- second row of thumbnails -->
+        <div class="row">
+          <div class="col-sm-6 col-sm-5"> 
+            <a target="_blank" href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/cloud_viz.html">
+            <img src="TempInWorldCities.png" alt="temp_world" style="width:150px" >
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a target="_blank" href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/wind_viz.html">
+            <img src="TempInWorldCities.png" alt="temp_world" style="width:150px" >
+            </a> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer" style="background-color: #2a2a2a"> 
+  <div class="container">
+    <p>Andy Meza Boostrap Site</p>
+  </div>
+</footer>
+
+</body>
+
+</html>

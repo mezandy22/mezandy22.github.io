@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Longitude</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+  <!-- bringing in ajax and boostrap js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- bringing in a style sheet to change some of the colors -->
+  <link rel="stylesheet" type="text/css" href="style_comparison.css">
+</head>
+
+<body>
+<!-- Navbar for the site -->
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/landing.html">World Weather Analysis</a>
+    </div>
+    <!-- navbar right  with the drop down -->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/temp_viz.html">Max Tempature</a></li>
+            <li><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/humidity_viz.html">Humidity</a></li>
+            <li><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/cloud_viz.html">Cloudiness</a></li>
+            <li><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/wind_viz.html">Wind Speed</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/comparison.html">Comparison</a></li>
+        <li class="active"><a href="file:///C:/Users/Prudencio%20Meza/Documents/UCB_Data_Analytics/HTML,%20CSS/HW/data.html">OpenWeather API Data</a></li>
+        </li>
+      </ul>
+  </div>
+</nav>
+  
+<div class="container-fluid" style="background-color: #eeeeee">   
+  <div class="row">
+    <div class="container">
+      <div class="col-sm-12" style="background-color: white">
+        <h1>Comparison: Latitude vs X</h1>
+        <p>The following is a comparison between all 4 maps that display the difference in maximum tempature, humidity, cloudiness and wind speed as it relates to the proxmity of the equator. As you can tell when comparing graphs there is a difference in correlation by proximity between all 4 weather factors.</p>
+        <br>3 Observations:
+        <br>1.The obvious one: Temperature rises as you get closer to the equator
+        <br>2.there is more variation in humidity inbetween 20 to 40 degrees latitude on either side of the equator
+        <br>3.No correlation between cloudiness and latitude
+
+        <!-- first row of thumnabils -->
+        <div class="row" >
+          <div class="col-lg-6 col-lg-5"> 
+            <h2 class="text-center">vs Max Tempature</h2>
+            <img src="TempInWorldCities.png" alt="temp_world" style="width:90%">
+          </div>
+          <div class="col-lg-6 col-lg-5">
+            <h2 class="text-center">vs Humidity</h2>
+            <img src="HumidityInWorldCities.png" alt="temp_world" style="width:90%" >
+          </div>
+        </div>
+        <!-- second row of thumbnails -->
+        <div class="row">
+          <div class="col-lg-6 col-lg-5"> 
+            <h2 class="text-center">vs Cloudiness</h2>
+            <img src="CloudinessInWorldCities.png" alt="temp_world" style="width:90%" >
+          </div>
+          <div class="col-lg-6 col-lg-5">
+            <h2 class="text-center">vs Wind Speed</h2>
+            <img src="WindSpdInWorldCities.png" alt="temp_world" style="width:90%" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer" style="background-color: #2a2a2a"> 
+  <div class="container">
+    <p>Andy Meza Boostrap Site</p>
+  </div>
+</footer>
+
+</body>
+
+</html>
